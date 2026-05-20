@@ -4,4 +4,4 @@ It needs the MoonRay libraries to build and run.  arras_render is a command-line
 and Moonray's MCRT computation.
 
 This repository is part of the larger MoonRay/Arras codebase.  It is included as a submodule in the top-level
-OpenMoonRay repository located here: [OpenMoonRay](https://github.com/dreamworksanimation/openmoonray)
+OpenMoonRay repository located here: [OpenMoonRay](https://github.com/OpenMoonRay/openmoonray)
