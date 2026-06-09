@@ -3,6 +3,7 @@
 #pragma once
 #include "NavigationCam.h"
 
+#include <functional>
 ///
 /// Controls:
 ///
