@@ -3,16 +3,6 @@
 #include "ImageView.h"
 #include "NavigationCam.h"
 
-#ifdef __ARM_NEON__
-// This works around OIIO including x86 based headers due to detection of SSE
-// support due to sse2neon.h being included elsewhere
-#define __IMMINTRIN_H
-#define __NMMINTRIN_H
-#define OIIO_NO_SSE 1
-#define OIIO_NO_AVX 1
-#define OIIO_NO_AVX2 1
-#endif
-
 #include <algorithm> // std::find
 #include <cmath>
 #include <fstream>
