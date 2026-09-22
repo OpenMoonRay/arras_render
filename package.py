@@ -60,13 +60,13 @@ variants = [
     #     'openimageio-3.0',
     #     'gcc-11.x'
     # ],
-    [   # variant 2
-        'os-rocky-9',
-        'opt_level-optdebug',
-        'refplat-vfx2022.0',
-        'openimageio-2.3.20.0.x',
-        'gcc-9.3.x.1'
-    ],
+    # [
+    #     'os-rocky-9',
+    #     'opt_level-optdebug',
+    #     'refplat-vfx2026.0',
+    #     'openimageio-3.1',
+    #     'gcc-14.2.x'
+    # ],
 ]
 
 requires = [
@@ -81,12 +81,12 @@ requires = [
 
     # Third party deps
     'boost',
-    'jsoncpp-1.9.5',
+    'jsoncpp-1.9',
     'openexr',
 ]
 
 private_build_requires = [
-    'cmake_modules-1.1',
+    'cmake_modules-2.0',
     'cppunit',
     'qt'
 ]
