@@ -39,7 +39,10 @@ find_package(Boost REQUIRED
 find_package(JPEG REQUIRED)
 find_package(IlmBase QUIET)
 find_package(Imath QUIET)
-find_package(OpenEXR REQUIRED)
+find_package(OpenEXR CONFIG QUIET)
+if(NOT OpenEXR_FOUND)
+    find_package(OpenEXR MODULE REQUIRED)
+endif()
 if(TARGET OpenEXR::IlmImfUtil)
     set(IMATHHALF IlmBase::Half)
 else()
@@ -124,4 +127,3 @@ install(
     DESTINATION
         ${CMAKE_INSTALL_LIBDIR}/cmake/${PROJECT_NAME}-${PROJECT_VERSION}
 )
-
